@@ -1,6 +1,7 @@
 package com.questadvancelayout_3nim
 
 import android.media.Image
+
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -24,6 +25,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 
 
 @Composable
@@ -73,6 +75,13 @@ fun ActivitasPertama(modifier: Modifier) {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-        )
+        ){
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
