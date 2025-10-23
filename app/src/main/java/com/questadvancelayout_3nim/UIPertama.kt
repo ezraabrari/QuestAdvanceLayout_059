@@ -73,6 +73,48 @@ fun Activitas(modifier: Modifier) {
                 }
             }
         }
+
+
+        Spacer(modifier = Modifier.height(10.dp))
+        Card(modifier = Modifier
+            .fillMaxWidth()
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )) {
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama1),
+                        fontSize = 28.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.Notelepon),
+                        fontSize = 18.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.Alamat1),
+                        fontSize = 18.sp,
+                        color = Color.Black,
+                        modifier = Modifier.padding(top = 10.dp, bottom = 3.dp)
+                    )
+
+                }
+            }
+        }
+    }
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -85,4 +127,3 @@ fun Activitas(modifier: Modifier) {
             )
         }
     }
-}
